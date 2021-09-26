@@ -8,6 +8,7 @@ const Main = () => {
     const [actors,setActors] = useState([]);
     const [selection,setSelection] = useState([]);
 
+    //   used useEffect hook for fetching data 
     useEffect( ()=>{
 
         fetch('./fakeData.JSON')
@@ -16,6 +17,7 @@ const Main = () => {
 
     }, []);
 
+        // event handler function 
     const buttonClick = (person) => {
         const allSelection = [...selection,person];
         setSelection(allSelection);
@@ -25,9 +27,9 @@ const Main = () => {
         <div className="main-container">
 
             <div className="person-container">
-            {
-                actors.map(actor => <Person name={actor} key={actor.id} buttonClick={buttonClick}></Person>)
-            }
+                {
+                    actors.map(actor => <Person name={actor} key={actor.id} buttonClick={buttonClick}></Person>)
+                }
             </div>
 
             <div className="cart-container">

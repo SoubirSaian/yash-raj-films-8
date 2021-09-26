@@ -1,9 +1,9 @@
 
+/* card style section  */
  .display-person{
      border: 1px solid gray;
      border-radius: 10px;
      padding: 12px;
-     /* background-color: #ff6a3d; */
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -18,24 +18,29 @@
 }
  
 .display-person h2{
+    margin: 7px;
     color: #2e2fe3;
     border-bottom: 2px solid #2e2fe3;
 }
 .display-person h1{
+    margin: 7px;
     color: #ff6a3d;
     border-bottom: 2px solid #ff6a3d;
 }
 
 .display-person h4{
+    margin: 7px;
     color: #183bf0;
     border-bottom: 2px solid #183bf0;
 }
 
 .display-person h3{
+    margin: 7px;
     color: #8900b3;
     border-bottom: 2px solid #8900b3;
 }
 
+/* regular button style  */
 .btn-regular{
     border: 1px solid #ff6a3d;
     padding: 10px 30px;
@@ -43,10 +48,14 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+/* hover effect on button  */
 .btn-regular:hover{
     color: white;
     background-color: tomato;
 }
+
+ /* social media icon style  */
 .media-icon{
     font-size: 40px;
     margin: 15px 25px;

@@ -1,9 +1,9 @@
-
+ /* grid display in the ui  */
 .main-container{
-    /* background-color: #ff6a3d; */
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+
 .person-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);

@@ -1,10 +1,12 @@
 import React from 'react';
 import './Header.css';
 
+//    header section 
+
 const Header = () => {
     return (
         <div className="navbar">
-            
+             {/* navigation bar and logo */}
            <div className="navbar-header">
                 <div className="navbar-logo">
                     <h1><i>yash raj films</i></h1>
@@ -15,9 +17,10 @@ const Header = () => {
                     <a href="./movies">Movies</a>
                     <a href="./about">About</a>
                     <a href="./contact">Contact</a>
-                </nav>
-                
+                </nav> 
            </div>
+           
+                {/* announcement section in the header  */}
            <div className="announcement-section">
                     <div>
                         <h2>upcoming movie : <strong>Ram-leela</strong></h2>

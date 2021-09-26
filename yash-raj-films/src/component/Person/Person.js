@@ -3,13 +3,13 @@ import './Person.css';
 
 const Person = (props) => {
     // console.log(props);
+    // destructuring props data 
     const {name,img,role,age,country,salary} = props.name;
+
     return (
         <div>
             <div className="display-person">
                 <img className="person-img" src={img} alt="" />
-
-                 
 
                 <h2>{name}</h2>
                  
@@ -23,6 +23,7 @@ const Person = (props) => {
 
                 {/* sociaal mmedia icon  */}
                 <span><i class="fab fa-facebook-square media-icon"></i><i class="fab fa-twitter-square media-icon"></i></span>
+                
                    {/* regular button   */}
                    
                 <button className="btn-regular" onClick={()=> props.buttonClick(props.name)}>select</button>
