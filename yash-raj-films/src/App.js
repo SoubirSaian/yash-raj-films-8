@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Main from './component/Main/Main';
+import Header from './component/Header/Header';
 
 
 function App() {
   return (
     <div>
-       <h1>yash raj films</h1>
+       <Header></Header>
        <Main></Main>
     </div>
   );

@@ -1,0 +1,32 @@
+.navbar{
+     background-image: linear-gradient(#ff4838,#ff6a3d);
+     position: sticky;
+}
+.navbar-header{
+    /* background-color: #ff4838; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-logo h1{
+    color: white;
+}
+.navbar-nav a{
+    text-decoration: none;
+    padding: 5px 12px;
+    color:white;
+    font-size: 20px;
+}
+.navbar-nav a:hover{
+    background-color: tomato;
+}
+
+.announcement-section{
+    /* background-color: #ff6a3d; */
+    display: flex;
+    justify-content: left;
+}
+.announcement-section div{
+    margin: 5px 50px;
+    color:#fafcdf;
+}

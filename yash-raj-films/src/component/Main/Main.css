@@ -1,5 +1,6 @@
 
 .main-container{
+    /* background-color: #ff6a3d; */
     display: grid;
     grid-template-columns: 3fr 1fr;
 }

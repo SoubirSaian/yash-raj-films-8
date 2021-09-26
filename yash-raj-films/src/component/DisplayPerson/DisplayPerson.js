@@ -3,8 +3,8 @@ import './DisplayPerson.css';
 
 const DisplayPerson = (props) => {
     return (
-        <div>
-            <h3>{props.name}</h3>
+        <div className="selected-actor">
+            <h1>{props.name}</h1>
         </div>
     );
 };

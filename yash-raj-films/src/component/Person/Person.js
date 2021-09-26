@@ -11,7 +11,7 @@ const Person = (props) => {
                 <h2>{name}</h2>
                 <h1>{role}</h1>
                 <h4>Age : {age}</h4>
-                <h5>Country : {country}</h5>
+                <h3>Country : {country}</h3>
                 <h3>Fee : {salary} Cr.</h3>
                 <button className="btn-regular" onClick={()=> props.buttonClick(props.name)}>select</button>
             </div>

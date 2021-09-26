@@ -3,7 +3,7 @@ import DisplayPerson from '../DisplayPerson/DisplayPerson';
 import './Count.css';
 
 const Count = (props) => {
-    console.log(props);
+    // console.log(props);
     const { selected } = props;
 
     let totalPayment = 0;
@@ -12,10 +12,10 @@ const Count = (props) => {
         
     }
     return (
-        <div>
-            <h1>cart container</h1>
-                <h2>Selected : {props.selected.length} </h2>
-                <h3>Payment : {totalPayment} Cr.</h3>
+        <div className="custing-section">
+            <h1>Your Custing :</h1>
+                <h2>Selected : <span className="count">{props.selected.length}</span> </h2>
+                <h2>Total Payment : <span className="count"> {totalPayment} Cr.</span></h2>
                 {
                     selected.map(actor => <DisplayPerson name={actor.name} key={actor.id}></DisplayPerson>)
                 }

@@ -3,12 +3,12 @@
      border: 1px solid gray;
      border-radius: 10px;
      padding: 12px;
-     background-color: #d77720;
+     /* background-color: #ff6a3d; */
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     box-shadow: 3px 3px 8px gray;
+     box-shadow: 3px 7px 15px #ff4838;
 } 
 
 .person-img{
@@ -16,7 +16,20 @@
     height: 200px;
     border-radius: 50%;
 }
+.display-person h2{
+    color: #2e2fe3;
+}
+.display-person h1{
+    color: #ff6a3d;
+}
+.display-person h4{
+    color: #183bf0;
+}
+.display-person h3{
+    color: #8900b3;
+}
 .btn-regular{
+    border: 1px solid #ff6a3d;
     padding: 10px 30px;
     font-size: 20px;
     border-radius: 10px;
