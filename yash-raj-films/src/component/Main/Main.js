@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import Count from '../Count/Count';
 import Person from '../Person/Person';
 import './Main.css';
 
 const Main = () => {
 
     const [actors,setActors] = useState([]);
+    const [selection,setSelection] = useState([]);
 
     useEffect( ()=>{
 
@@ -14,17 +16,22 @@ const Main = () => {
 
     }, []);
 
+    const buttonClick = (person) => {
+        const allSelection = [...selection,person];
+        setSelection(allSelection);
+    }
+
     return (
         <div className="main-container">
 
             <div className="person-container">
             {
-                actors.map(actor => <Person name={actor} key={actor.name}></Person>)
+                actors.map(actor => <Person name={actor} key={actor.id} buttonClick={buttonClick}></Person>)
             }
             </div>
 
             <div className="cart-container">
-                <h1>cart container</h1>
+                <Count selected={selection}></Count>
             </div>
            
         </div>

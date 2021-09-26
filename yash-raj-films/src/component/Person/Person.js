@@ -2,17 +2,18 @@ import React from 'react';
 import './Person.css';
 
 const Person = (props) => {
-    console.log(props.name);
-    const {name,img,role,age,country,salary} = props.name
+    // console.log(props);
+    const {name,img,role,age,country,salary} = props.name;
     return (
-        <div className="display-person">
-            <div>
+        <div>
+            <div className="display-person">
                 <img className="person-img" src={img} alt="" />
-                <h3>{name}</h3>
-                <h4>{role}</h4>
-                <h5>{age}</h5>
-                <h6>{country}</h6>
-                <p>{salary} Cr.</p>
+                <h2>{name}</h2>
+                <h1>{role}</h1>
+                <h4>Age : {age}</h4>
+                <h5>Country : {country}</h5>
+                <h3>Fee : {salary} Cr.</h3>
+                <button className="btn-regular" onClick={()=> props.buttonClick(props.name)}>select</button>
             </div>
              
         </div>
